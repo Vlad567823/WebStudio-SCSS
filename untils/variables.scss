@@ -1,0 +1,53 @@
+$color-primary: #2196F3;
+$color-secondary: #2ecc71;
+$color-accent: #f39c12;
+$color-text: #212121;
+$color-background: #FFFFFF;
+
+// fonts
+$font-primary: 'Roboto', Bold;
+$font-secondary: 'Raleway', Bold;
+
+// breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+
+body {
+     font-family: $font-primary;
+     background-color: $color-background;
+     color: $color-text;
+   }
+   
+   .button {
+     background-color: $color-primary;
+     color: white;
+     font-family: $font-secondary;
+   }
+   .header {
+     background-color: $color-primary;
+     
+     &__logo {
+       font-size: 24px;
+       color: white;
+     }
+   
+     &__menu {
+       display: flex;
+       justify-content: space-around;
+     
+       &-item {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+       }
+   
+       &-item--active {
+         font-weight: bold;
+         color: $color-accent;
+       }
+     }
+   
+     &__logo:hover {
+       color: $color-secondary;
+     }
+   }
